@@ -8,7 +8,7 @@ import ItemBox from "@/components/ItemBox";
 import { ItemProps, data } from "@/utils/ItemBoxProps";
 
 // 1. Get projectId
-const projectId = process.env.NEXT_WALLETCONNECT_PROJECT_ID!;
+const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID!;
 
 // 2. Create wagmiConfig
 const chains = [mainnet, polygon, polygonMumbai];
