@@ -3,13 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ItemProps } from "../utils/ItemBoxProps";
-import { useMemo } from "react";
 
 interface ItemBoxProps extends ItemProps {
   index: number;
 }
-
-// const specialList = ["w3mlab"];
 
 const ItemBox: React.FC<ItemBoxProps> = ({
   title,
@@ -18,13 +15,7 @@ const ItemBox: React.FC<ItemBoxProps> = ({
   href,
   tags,
   color,
-  isWIP,
-  externalURL,
-  slug,
-  index,
 }) => {
-  const isExternal = useMemo(() => externalURL !== undefined, [externalURL]);
-
   // const isSpecial = useMemo(() => specialList.includes(slug), [slug]);
 
   const style = {

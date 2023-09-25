@@ -39,7 +39,7 @@ export const data: ItemProps[] = [
     slug: "safe",
     image: "https://avatars.githubusercontent.com/u/109633172?s=200&v=4",
     description:
-      "The Safe{Core} AA SDK main purpose is to bring Account Abstraction to life by focusing on integrating Safe with different third parties that can be provided to developers and users to abstract the complexity that comes with setting a smart contract account.",
+      "The Safe{Core} AA SDK main purpose is to bring Account Abstraction to life.",
     color: "#0EFF80",
     tags: ["Auth", "Protocol", "OnRamp", "Relay"],
     href: "https://docs.safe.global/getting-started/readme",
@@ -50,7 +50,8 @@ export const data: ItemProps[] = [
     slug: "zerodev",
     image:
       "https://pbs.twimg.com/profile_images/1654520099225878528/V5HNWweD_400x400.jpg",
-    description: "X",
+    description:
+      "ZeroDev provides ultra-reliable bundler access by working with multiple bundler providers.",
     color: "#17BFE5",
     tags: ["UserOps", "Paymaster", "Bundler"],
     href: "https://docs.zerodev.app/",
