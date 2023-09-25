@@ -9,17 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@account-abstraction/contracts": "^0.6.0",
+    "@biconomy/account": "^3.0.0",
+    "@biconomy/bundler": "^3.0.0",
+    "@biconomy/common": "^3.0.0",
+    "@biconomy/core-types": "^3.0.0",
+    "@biconomy/paymaster": "^3.0.0",
+    "@pimlico/erc20-paymaster": "^0.1.1",
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "@web3modal/wagmi": "^3.0.0-beta.1",
+    "@zerodev/sdk": "^4.0.16",
+    "abstractionkit": "^0.0.7",
     "autoprefixer": "10.4.15",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
+    "ethers": "5.7.0",
     "next": "13.4.19",
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "viem": "^1.10.14",
+    "wagmi": "^1.4.1"
   }
 }
