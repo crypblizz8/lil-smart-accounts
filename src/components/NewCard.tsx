@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { ItemProps } from "../utils/ItemBoxProps";
 
 interface ItemBoxProps extends ItemProps {
@@ -12,11 +11,10 @@ const ItemBox: React.FC<ItemBoxProps> = ({
   title,
   description,
   image,
-  href,
   tags,
   color,
+  children,
 }) => {
-  // const isSpecial = useMemo(() => specialList.includes(slug), [slug]);
 
   const style = {
     "--color": `${color}aa`,
@@ -62,8 +60,7 @@ const ItemBox: React.FC<ItemBoxProps> = ({
         </div>
       </div>
       <div className="border-t border-[var(--color-dark)] px-4 py-3 flex items-center gap-4">
-        <p>Test</p>
-        {/* <p>Address: 0x000000000000000000000000000000000000dead</p> */}
+        {children}
       </div>
     </div>
   );

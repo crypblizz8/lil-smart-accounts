@@ -8,6 +8,7 @@ import { polygon, polygonMumbai } from "wagmi/chains";
 import { IPaymaster, BiconomyPaymaster } from "@biconomy/paymaster";
 import { useEffect, useState } from "react";
 import { Wallet, providers, ethers } from "ethers";
+import { createWalletClient } from "viem";
 
 const provider = new providers.JsonRpcProvider(
   process.env.NEXT_PUBLIC_BICONOMY_RPC
@@ -50,15 +51,15 @@ export function Biconomy() {
   useEffect(() => {}, [smartAccountAddress]);
 
   return (
-    <Card title="Biconomy">
+    <div>
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 rounded"
+        className="col-span-2 px-4 py-2 flex-shrink-0 flex-grow text-sm font-semibold text-gray-100 hover:text-white bg-gradient-to-t from-[var(--color)] to-[var(--color-light)] hover:bg-[var(--color-light)] rounded-lg flex items-center justify-between group transition-colors "
         onClick={() => createSmartAccount()}
       >
-        Create Smart Account
+        Generate Smart Account
       </button>
-      <p> SA Address: </p>
-      <p>{smartAccountAddress ? smartAccountAddress : "No Smart Account"}</p>
-    </Card>
+      <p className="mt-2">SA Address:</p>
+      <p>{smartAccountAddress ? smartAccountAddress : " No Smart Account"}</p>
+    </div>
   );
 }

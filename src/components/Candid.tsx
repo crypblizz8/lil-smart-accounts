@@ -21,19 +21,19 @@ export default function Candid() {
   useEffect(() => {}, [candidSmartAccountAddress]);
 
   return (
-    <Card title="Candid">
+    <div>
       <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-4 rounded"
+        className="col-span-2 px-4 py-2 flex-shrink-0 flex-grow text-sm font-semibold text-gray-100 hover:text-white bg-gradient-to-t from-[var(--color)] to-[var(--color-light)] hover:bg-[var(--color-light)] rounded-lg flex items-center justify-between group transition-colors "
         onClick={() => createCandidSmartAccount()}
       >
-        Create Smart Account
+        Generate Smart Account
       </button>
-      <p> SA Address: </p>
+      <p className="mt-2">SA Address:</p>
       <p>
         {candidSmartAccountAddress
           ? candidSmartAccountAddress
-          : "No Smart Account"}
+          : " No Smart Account"}
       </p>
-    </Card>
+    </div>
   );
 }
