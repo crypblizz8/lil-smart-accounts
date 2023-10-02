@@ -1,4 +1,3 @@
-import Card from "./Card";
 import { ECDSAProvider, ECDSAValidator } from "@zerodev/sdk";
 import { PrivateKeySigner } from "@alchemy/aa-core";
 import { useEffect, useState } from "react";

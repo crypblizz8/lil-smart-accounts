@@ -1,5 +1,4 @@
 import { Wallet } from "ethers";
-import Card from "./Card";
 import { CandideAccount } from "abstractionkit";
 import { useEffect, useState } from "react";
 

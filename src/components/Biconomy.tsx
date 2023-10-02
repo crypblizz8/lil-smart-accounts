@@ -1,4 +1,3 @@
-import Card from "./Card";
 import { IBundler, Bundler } from "@biconomy/bundler";
 import {
   BiconomySmartAccount,

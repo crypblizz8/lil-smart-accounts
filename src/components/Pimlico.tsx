@@ -1,4 +1,3 @@
-import Card from "./Card";
 import { useEffect, useState } from "react";
 import { ethers, Wallet } from "ethers";
 
