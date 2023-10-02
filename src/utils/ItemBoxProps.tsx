@@ -29,29 +29,20 @@ export const data: ItemProps[] = [
     isWIP: false,
     children: <Biconomy />,
   },
-  // {
-  //   title: "StackupFi",
-  //   slug: "stackupfi",
-  //   image:
-  //     "https://pbs.twimg.com/profile_images/1493586970550804483/lIbtd1gQ_400x400.jpg",
-  //   description:
-  //     "Smart account infrastructure,simplified. Build your business on the most mature and reliable ERC-4337 infrastructure available.",
-  //   color: "#1779ED",
-  //   tags: ["UserOps", "Bundler", "Paymaster", "Ethers"],
-  //   href: "https://docs.stackup.sh/docs",
-  //   isWIP: false,
-  // },
-  // {
-  //   title: "Safe (Core)",
-  //   slug: "safe",
-  //   image: "https://avatars.githubusercontent.com/u/109633172?s=200&v=4",
-  //   description:
-  //     "The Safe{Core} AA SDK main purpose is to bring Account Abstraction to life.",
-  //   color: "#0EFF80",
-  //   tags: ["Auth", "Protocol", "OnRamp", "Relay", "Ethers"],
-  //   href: "https://docs.safe.global/getting-started/readme",
-  //   isWIP: false,
-  // },
+  {
+    title: "Pimlico",
+    slug: "pimlico",
+    image:
+      "https://pbs.twimg.com/profile_images/1693793364380938240/wvr-wszx_400x400.jpg",
+    description:
+      "Smart Account tools for ERC-4337 that streamline your path from vision to reality.",
+    color: "#1F042F",
+    tags: ["UserOps", "Bundler", "Paymaster", "Ethers"],
+    href: "https://docs.pimlico.io/",
+    isWIP: false,
+    children: <Pimlico />,
+  },
+
   {
     title: "ZeroDev",
     slug: "zerodev",
@@ -78,19 +69,7 @@ export const data: ItemProps[] = [
     isWIP: false,
     children: <Candid />,
   },
-  {
-    title: "Pimlico",
-    slug: "pimlico",
-    image:
-      "https://pbs.twimg.com/profile_images/1693793364380938240/wvr-wszx_400x400.jpg",
-    description:
-      "Smart Account tools for ERC-4337 that streamline your path from vision to reality.",
-    color: "#1F042F",
-    tags: ["UserOps", "Bundler", "Paymaster", "Ethers"],
-    href: "https://docs.pimlico.io/",
-    isWIP: false,
-    children: <Pimlico />,
-  },
+
   // {
   //   title: "Alchemy",
   //   slug: "alchemy",
@@ -101,6 +80,29 @@ export const data: ItemProps[] = [
   //   color: "#2E3148",
   //   tags: ["UserOps", "Bundler", "Viem"],
   //   href: "https://docs.alchemy.com/docs/account-abstraction-overview",
+  //   isWIP: false,
+  // },
+  // {
+  //   title: "StackupFi",
+  //   slug: "stackupfi",
+  //   image:
+  //     "https://pbs.twimg.com/profile_images/1493586970550804483/lIbtd1gQ_400x400.jpg",
+  //   description:
+  //     "Smart account infrastructure,simplified. Build your business on the most mature and reliable ERC-4337 infrastructure available.",
+  //   color: "#1779ED",
+  //   tags: ["UserOps", "Bundler", "Paymaster", "Ethers"],
+  //   href: "https://docs.stackup.sh/docs",
+  //   isWIP: false,
+  // },
+  // {
+  //   title: "Safe (Core)",
+  //   slug: "safe",
+  //   image: "https://avatars.githubusercontent.com/u/109633172?s=200&v=4",
+  //   description:
+  //     "The Safe{Core} AA SDK main purpose is to bring Account Abstraction to life.",
+  //   color: "#0EFF80",
+  //   tags: ["Auth", "Protocol", "OnRamp", "Relay", "Ethers"],
+  //   href: "https://docs.safe.global/getting-started/readme",
   //   isWIP: false,
   // },
 ];
