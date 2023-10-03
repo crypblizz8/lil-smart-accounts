@@ -11,14 +11,17 @@ import NewCard from "@/components/NewCard";
 const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID!;
 
 // 2. Create wagmiConfig
+const metadata = {
+  name: "Web3Modal",
+  description: "Web3Modal Example",
+  url: "https://web3modal.com",
+  icons: ["https://avatars.githubusercontent.com/u/37784886"],
+};
+
 const chains = [mainnet, goerli, polygon, polygonMumbai];
+const wagmiConfig = defaultWagmiConfig({ chains, projectId, metadata });
 
-const wagmiConfig = defaultWagmiConfig({
-  chains,
-  projectId,
-  appName: "Lil Smart Accounts",
-});
-
+// 3. Create modal
 createWeb3Modal({ wagmiConfig, projectId, chains });
 
 //ToDo: Add W3M + figure out the wrapper for
