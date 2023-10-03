@@ -1,18 +1,20 @@
 import { Wallet } from "ethers";
 import { CandideAccount } from "abstractionkit";
 import { useEffect, useState } from "react";
+import { useAccount } from "wagmi";
 
 export default function Candid() {
+  const { address } = useAccount();
   const [candidSmartAccountAddress, setCandidSmartAccountAddress] =
     useState<string>("");
 
   const createCandidSmartAccount = () => {
     const smartAccount = new CandideAccount();
 
-    const eoaSigner = new Wallet(process.env.NEXT_PUBLIC_VANITY_KEY!);
-
     // ERROR: on documentation it says eoaSigner / not eoasigner.address
-    let res = smartAccount.createNewAccount([eoaSigner.address]);
+    // const eoaSigner = new Wallet(process.env.NEXT_PUBLIC_VANITY_KEY!);
+
+    let res = smartAccount.createNewAccount([address || "0x0"]);
     setCandidSmartAccountAddress(res[0]);
     console.log("Account address (sender): " + candidSmartAccountAddress);
   };
