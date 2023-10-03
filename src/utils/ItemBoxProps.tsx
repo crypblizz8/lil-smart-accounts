@@ -1,6 +1,7 @@
 import { Biconomy } from "@/components/Biconomy";
 import Candid from "@/components/Candid";
 import Pimlico from "@/components/Pimlico";
+import PimlicoPermissionLess from "@/components/PimlicoPermissionless";
 import ZeroDev from "@/components/ZeroDev";
 
 export interface ItemProps {
@@ -37,17 +38,30 @@ export const data: ItemProps[] = [
     description:
       "Smart Account tools for ERC-4337 that streamline your path from vision to reality.",
     color: "#1F042F",
-    tags: ["UserOps", "Bundler", "Paymaster", "Ethers"],
+    tags: ["UserOps", "Bundler", "Paymaster", "Ethers", "Viem"],
     href: "https://docs.pimlico.io/",
     isWIP: false,
     children: <Pimlico />,
+  },
+  {
+    title: "Pimlico (Permisionless)",
+    slug: "pimlicopermissionless",
+    image:
+      "https://pbs.twimg.com/profile_images/1693793364380938240/wvr-wszx_400x400.jpg",
+    description:
+      "Smart Account tools for ERC-4337 that streamline your path from vision to reality.",
+    color: "#1F042F",
+    tags: ["UserOps", "Bundler", "Paymaster", "Ethers", "Viem"],
+    href: "https://docs.pimlico.io/",
+    isWIP: false,
+    children: <PimlicoPermissionLess />,
   },
 
   {
     title: "ZeroDev",
     slug: "zerodev",
     image:
-      "https://pbs.twimg.com/profile_images/1582474288719880195/DavMgC0t_400x400.jpgg",
+      "https://pbs.twimg.com/profile_images/1582474288719880195/DavMgC0t_400x400.jpg",
     description:
       "ZeroDev provides ultra-reliable bundler access by working with multiple bundler providers.",
     color: "#17BFE5",
@@ -64,7 +78,7 @@ export const data: ItemProps[] = [
     description:
       "Candide Atelier is a set of tools that lets you build smart wallets powered by ERC-4337 Account Abstraction.",
     color: "#1F2445",
-    tags: ["UserOps", "Bundler", "Paymaster", "Ethers"],
+    tags: ["UserOps", "Bundler", "Paymaster", "Ethers", "Tested with Wagmi"],
     href: "https://docs.candide.dev/wallet/atelier-intro/",
     isWIP: false,
     children: <Candid />,
