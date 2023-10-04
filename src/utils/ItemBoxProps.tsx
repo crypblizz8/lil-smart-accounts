@@ -25,7 +25,7 @@ export const data: ItemProps[] = [
     description:
       "The Biconomy SDK is an Account Abstraction toolkit that enables the simplest UX on your dApp or wallet",
     color: "#FF4E17",
-    tags: ["Auth", "Social Login", "Bundler", "Paymaster", "Ethers"],
+    tags: ["Auth", "Social Login", "Bundler", "Paymaster"],
     href: "https://docs.biconomy.io/docs/overview",
     isWIP: false,
     children: <Biconomy />,
@@ -38,25 +38,24 @@ export const data: ItemProps[] = [
     description:
       "Smart Account tools for ERC-4337 that streamline your path from vision to reality.",
     color: "#1F042F",
-    tags: ["UserOps", "Bundler", "Paymaster", "Ethers", "Viem"],
+    tags: ["UserOps", "Bundler", "Paymaster"],
     href: "https://docs.pimlico.io/",
     isWIP: false,
     children: <Pimlico />,
   },
-  {
-    title: "Pimlico (Permisionless)",
-    slug: "pimlicopermissionless",
-    image:
-      "https://pbs.twimg.com/profile_images/1693793364380938240/wvr-wszx_400x400.jpg",
-    description:
-      "Smart Account tools for ERC-4337 that streamline your path from vision to reality.",
-    color: "#1F042F",
-    tags: ["UserOps", "Bundler", "Paymaster", "Ethers", "Viem"],
-    href: "https://docs.pimlico.io/",
-    isWIP: false,
-    children: <PimlicoPermissionLess />,
-  },
-
+  // {
+  //   title: "Pimlico (Permisionless)",
+  //   slug: "pimlicopermissionless",
+  //   image:
+  //     "https://pbs.twimg.com/profile_images/1693793364380938240/wvr-wszx_400x400.jpg",
+  //   description:
+  //     "Smart Account tools for ERC-4337 that streamline your path from vision to reality.",
+  //   color: "#1F042F",
+  //   tags: ["UserOps", "Bundler", "Paymaster", "Ethers", "Viem"],
+  //   href: "https://docs.pimlico.io/",
+  //   isWIP: false,
+  //   children: <PimlicoPermissionLess />,
+  // },
   {
     title: "ZeroDev",
     slug: "zerodev",
@@ -65,7 +64,7 @@ export const data: ItemProps[] = [
     description:
       "ZeroDev provides ultra-reliable bundler access by working with multiple bundler providers.",
     color: "#17BFE5",
-    tags: ["UserOps", "Paymaster", "Bundler", "Viem", "Ethers"],
+    tags: ["UserOps", "Paymaster", "Bundler"],
     href: "https://docs.zerodev.app/",
     isWIP: false,
     children: <ZeroDev />,
@@ -78,7 +77,7 @@ export const data: ItemProps[] = [
     description:
       "Candide Atelier is a set of tools that lets you build smart wallets powered by ERC-4337 Account Abstraction.",
     color: "#1F2445",
-    tags: ["UserOps", "Bundler", "Paymaster", "Ethers", "Tested with Wagmi"],
+    tags: ["UserOps", "Bundler", "Paymaster"],
     href: "https://docs.candide.dev/wallet/atelier-intro/",
     isWIP: false,
     children: <Candid />,
