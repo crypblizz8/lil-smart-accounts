@@ -1,5 +1,5 @@
 import { Biconomy } from "@/components/Biconomy";
-import Candid from "@/components/Candide";
+import Candide from "@/components/Candide";
 import Pimlico from "@/components/Pimlico";
 import PimlicoPermissionLess from "@/components/PimlicoPermissionless";
 import ZeroDev from "@/components/ZeroDev";
@@ -80,7 +80,7 @@ export const data: ItemProps[] = [
     tags: ["UserOps", "Bundler", "Paymaster"],
     href: "https://docs.candide.dev/wallet/atelier-intro/",
     isWIP: false,
-    children: <Candid />,
+    children: <Candide />,
   },
 
   // {
