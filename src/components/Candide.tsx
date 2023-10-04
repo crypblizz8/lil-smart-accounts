@@ -5,7 +5,7 @@ import { useAccount } from "wagmi";
 
 export default function Candid() {
   const { address } = useAccount();
-  const [candidSmartAccountAddress, setCandidSmartAccountAddress] =
+  const [candideSmartAccountAddress, setCandidSmartAccountAddress] =
     useState<string>("");
 
   const createCandidSmartAccount = () => {
@@ -16,10 +16,10 @@ export default function Candid() {
 
     let res = smartAccount.createNewAccount([address || "0x0"]);
     setCandidSmartAccountAddress(res[0]);
-    console.log("Account address (sender): " + candidSmartAccountAddress);
+    console.log("Account address (sender): " + candideSmartAccountAddress);
   };
 
-  useEffect(() => {}, [candidSmartAccountAddress]);
+  useEffect(() => {}, [candideSmartAccountAddress]);
 
   return (
     <div>
@@ -31,8 +31,8 @@ export default function Candid() {
       </button>
       <p className="mt-2">SA Address:</p>
       <p>
-        {candidSmartAccountAddress
-          ? candidSmartAccountAddress
+        {candideSmartAccountAddress
+          ? candideSmartAccountAddress
           : " No Smart Account"}
       </p>
     </div>

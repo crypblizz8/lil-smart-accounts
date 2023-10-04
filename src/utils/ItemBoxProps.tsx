@@ -1,5 +1,5 @@
 import { Biconomy } from "@/components/Biconomy";
-import Candid from "@/components/Candid";
+import Candid from "@/components/Candide";
 import Pimlico from "@/components/Pimlico";
 import PimlicoPermissionLess from "@/components/PimlicoPermissionless";
 import ZeroDev from "@/components/ZeroDev";
@@ -70,8 +70,8 @@ export const data: ItemProps[] = [
     children: <ZeroDev />,
   },
   {
-    title: "Candid",
-    slug: "candid",
+    title: "Candide",
+    slug: "candide",
     image:
       "https://pbs.twimg.com/profile_images/1589039280999075842/JX6Aceja_400x400.jpg",
     description:
