@@ -1,6 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Lil Smart Accounts
+<img width="1417" alt="image" src="https://github.com/crypblizz8/lil-smart-accounts/assets/45455218/8abc21c0-320d-40f4-be2b-a30422ebb0d5">
 
 First, run the development server:
 
