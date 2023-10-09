@@ -17,8 +17,16 @@
 ```
 
 ### Development
+Installation
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+```
 
-First, run the development server:
+Second, run the development server:
 
 ```bash
 npm run dev
